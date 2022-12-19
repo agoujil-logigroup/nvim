@@ -61,3 +61,13 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist)
 
 
 vim.keymap.set('n', '<leader>b', ":ToggleBlameLine<CR>")
+
+-- Navigate buffers
+vim.keymap.set('n', '<S-Right>', ":bnext<CR>")
+vim.keymap.set('n', '<S-Left>', ":bprevious<CR>")
+
+
+
+vim.cmd([[
+  autocmd BufEnter * EnableBlameLine
+]])
