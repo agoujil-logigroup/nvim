@@ -20,6 +20,13 @@ require('packer').startup(function(use)
   })
 
   use({
+    'voldikss/vim-floaterm',
+    config = function()
+      require('plugins.floaterm')
+    end,
+  })
+
+  use({
     'akinsho/bufferline.nvim',
     requires = 'kyazdani42/nvim-web-devicons',
     after = 'onedark.nvim',

@@ -67,6 +67,11 @@ vim.keymap.set('n', '<S-Right>', ":bnext<CR>")
 vim.keymap.set('n', '<S-Left>', ":bprevious<CR>")
 
 
+vim.keymap.set('n', '<F9>', ':!docker-compose up -d<CR>')
+
+
+vim.keymap.set('n', '<F5>', ':!docker-compose down<CR>')
+
 
 vim.cmd([[
   autocmd BufEnter * EnableBlameLine
